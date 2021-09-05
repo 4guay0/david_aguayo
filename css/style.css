@@ -1,0 +1,13 @@
+#nombre{
+   text-align: center;
+   font-size: 2rem;
+}
+
+header{
+   background-color: gray;
+   padding: .5rem;
+}
+
+div [class|="col"]{
+   border: 1px solid #ffc107; 
+}
