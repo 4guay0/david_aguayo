@@ -1,13 +1,111 @@
-#nombre{
-   text-align: center;
-   font-size: 2rem;
+
+.cuerpo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+  background-color: #FEF7DC;
 }
 
-header{
-   background-color: gray;
-   padding: .5rem;
+p {
+  margin-bottom: 1.6em;
 }
 
-div [class|="col"]{
-   border: 1px solid #ffc107; 
+.nombre {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  z-index: 3;
+  background-color: #a19882;
+  color: #fff;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.navegacion ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navegacion ul li {
+  display: inline-block;
+}
+
+.navegacion ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 0.3rem;
+}
+
+.navegacion ul li a:hover {
+  background-color: #E6DDC6;
+}
+
+@media only screen and (max-width: 767px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    font-size: 2rem;
+  }
+  .navegacion {
+    width: 100%;
+    margin-top: 0;
+  }
+  .navegacion ul {
+    display: none;
+  }
+  .navegacion ul.show {
+    display: block;
+  }
+
+  .navegacion ul li {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .navegacion ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    transition: all 0.4s linear;
+    border-radius: 0.3rem;
+  }
+
+  .navegacion ul li a:hover {
+    background-color: #E6DDC6;
+    padding-left: 1rem;
+  }
+}
+
+.row {
+  padding: 0;
+  margin: 0 0.5rem;
+  width: 100%;
+}
+
+div [class|="col"] {
+  border: 1px solid #ffc107;
 }
